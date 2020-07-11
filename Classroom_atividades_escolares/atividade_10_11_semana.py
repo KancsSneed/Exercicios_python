@@ -83,7 +83,7 @@ def atividade_9():
 #Atividade 10
 def atividade_10():
     sexo = input('Digite seu sexo, tal que "M" para masculino ou "F" para feminino:     ')
-    if sexo != "M" or "m" or "F" or "f":
+    if sexo != "M" and "m" or "F" and "f":
         print("Sexo inválido.")
         atividade_10()
     elif sexo == "M" or "m":
