@@ -14,7 +14,7 @@ atividade = int(input("""
         10. Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
         11. Programa que verifique se uma letra digitada é vogal ou consoante
 """))
-#Atividades
+                                                        #Atividades
 
 #Atividade 1
 def atividade_1():
@@ -80,6 +80,16 @@ def atividade_9():
     elif number > 0:
         print(f"O valor {number} é positivo.")
 
+#Atividade 10
+def atividade_10():
+    sexo = input('Digite seu sexo, tal que "M" para masculino ou "F" para feminino:     ')
+    if sexo != "M" or "m" or "F" or "f":
+        print("Sexo inválido.")
+        atividade_10()
+    elif sexo == "M" or "m":
+        print("Seu sexo é masculino.")
+    elif sexo == "F" or "m":
+        print("Seu sexo é feminino.")
 
 
 
@@ -103,7 +113,8 @@ elif atividade == 8:
     atividade_8()
 elif atividade == 9:
     atividade_9()
-
+elif atividade == 10:
+    atividade_10()
 
 
 
