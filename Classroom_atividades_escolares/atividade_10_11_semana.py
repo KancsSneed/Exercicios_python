@@ -49,7 +49,31 @@ def atividade_4():
 def atividade_5():
     medida_metros = float(input("Digite a medida para ser convertida:  "))
     medida_centimetros = medida_metros * 100
-    print(f"Sua medida convertida é {medida_centimetros}cm.")
+    print(f"A medida em metros convertida para centímentros é de {medida_centimetros}.")
+
+#Atividade 6
+def atividade_6():
+    raio = float(input("Digite o tamanho do raio:       "))
+    area = 2 * 3.14 * raio**2
+    print(f"A área do círculo é de {area}.")
+
+#Atividade 7
+def atividade_7():
+    lado = float(input("Digite o tamanho de um dos lados do quadrado:      "))
+    area = lado**2
+    print(f"O dobro da área do quadrado é {area * 2}")
+
+#Atividade 8
+def atividade_8():
+    dinheiro_por_horas = float(input("Digite quanto você ganha por hora:      "))
+    horas_trabalhadas = float(input("Digite quantas horas por mês você trabalha:    "))
+    salario = dinheiro_por_horas * horas_trabalhadas
+    print(f"Você recebe R${salario} por mês.")
+
+
+
+
+
 
 #Execução
 if atividade == 1:
@@ -60,8 +84,15 @@ elif atividade == 3:
     atividade_3()
 elif atividade == 4:
     atividade_4()
-elif atividade_5() == 5:
+elif atividade == 5:
     atividade_5()
+elif atividade ==  6:
+    atividade_6()
+elif atividade == 7:
+    atividade_7()
+elif atividade:
+    atividade_8()
+
 
 
 
