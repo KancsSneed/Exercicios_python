@@ -70,6 +70,15 @@ def atividade_8():
     salario = dinheiro_por_horas * horas_trabalhadas
     print(f"Você recebe R${salario} por mês.")
 
+#Atividade 9
+def atividade_9():
+    number = float(input("Digite um número:   "))
+    if number < 0:
+        print(f"O valor {number} é negativo.")
+    elif number == 0:
+        print(f"O valor não é positivo e nem negativo.")
+    elif number > 0:
+        print(f"O valor {number} é positivo.")
 
 
 
@@ -90,8 +99,10 @@ elif atividade ==  6:
     atividade_6()
 elif atividade == 7:
     atividade_7()
-elif atividade:
+elif atividade == 8:
     atividade_8()
+elif atividade == 9:
+    atividade_9()
 
 
 
