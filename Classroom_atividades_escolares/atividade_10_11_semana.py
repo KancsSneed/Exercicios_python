@@ -15,25 +15,61 @@ def main():
             10. Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
             11. Programa que verifique se uma letra digitada é vogal ou consoante
     """))
-    return atividade
+    if atividade == 1:
+        atividade_1()
+    elif atividade == 2:
+        atividade_2()
+    elif atividade == 3:
+        atividade_3()
+    elif atividade == 4:
+        atividade_4()
+    elif atividade == 5:
+        atividade_5()
+    elif atividade ==  6:
+        atividade_6()
+    elif atividade == 7:
+        atividade_7()
+    elif atividade == 8:
+        atividade_8()
+    elif atividade == 9:
+        atividade_9()
+    elif atividade == 10:
+        atividade_10()
+    elif atividade == 11:
+        atividade_11()
                                                         #Atividades
 
-
+def escolha():
+    print("""
+        1. Rever atividade
+        2. Voltar para o menu
+        3.Finalizar
+    """)
+    escolha = int(input("O que deseja agora?   "))
+    if escolha == 1:
+        atividade_1()
+    elif escolha == 2:
+        main()
+    elif escolha == 3:
+        print("Finalizado.")
 
 #Atividade 1
 def atividade_1():
     print("Olá Mundo!")
+    escolha()
 
 #Atividade 2
 def atividade_2():
     number = float(input("Digite um número:   ")) 
     print(f"O número informado foi {number}")
+    escolha()
 
 #Atividade 3
 def atividade_3():
     number1 = float(input("Digite o primeiro número:  "))
     number2 = float(input("Digite o segundo número:   "))
     print(f"A soma entre {number1} e {number2} é {number1 + number2}")
+    escolha()
 
 #Atividade 4
 def atividade_4():
@@ -48,24 +84,28 @@ def atividade_4():
         print("Você infelismente foi reprovado!")
     else: 
         print("Parabéns! Você passou!")
+    escolha()
 
 #Atividade 5
 def atividade_5():
     medida_metros = float(input("Digite a medida para ser convertida:  "))
     medida_centimetros = medida_metros * 100
     print(f"A medida em metros convertida para centímentros é de {medida_centimetros}.")
+    escolha()
 
 #Atividade 6
 def atividade_6():
     raio = float(input("Digite o tamanho do raio:       "))
     area = 2 * 3.14 * raio**2
     print(f"A área do círculo é de {area}.")
+    escolha()
 
 #Atividade 7
 def atividade_7():
     lado = float(input("Digite o tamanho de um dos lados do quadrado:      "))
     area = lado**2
     print(f"O dobro da área do quadrado é {area * 2}")
+    escolha()
 
 #Atividade 8
 def atividade_8():
@@ -73,6 +113,7 @@ def atividade_8():
     horas_trabalhadas = float(input("Digite quantas horas por mês você trabalha:    "))
     salario = dinheiro_por_horas * horas_trabalhadas
     print(f"Você recebe R${salario} por mês.")
+    escolha()
 
 #Atividade 9
 def atividade_9():
@@ -83,6 +124,7 @@ def atividade_9():
         print(f"O valor não é positivo e nem negativo.")
     elif number > 0:
         print(f"O valor {number} é positivo.")
+    escolha()
 
 #Atividade 10
 def atividade_10():
@@ -94,6 +136,7 @@ def atividade_10():
         print("Seu sexo é masculino.")
     elif sexo == "F" or "m":
         print("Seu sexo é feminino.")
+    escolha()
 
 #Atividade 11
 def atividade_11():
@@ -104,35 +147,13 @@ def atividade_11():
         print("Vogal!")
     elif letra in consoantes:
         print("Consoante!")
+    escolha()
 
 
 
 #Execução do programa
-atividade = main()
+main()
 
-
-if atividade == 1:
-    atividade_1()
-elif atividade == 2:
-    atividade_2()
-elif atividade == 3:
-    atividade_3()
-elif atividade == 4:
-    atividade_4()
-elif atividade == 5:
-    atividade_5()
-elif atividade ==  6:
-    atividade_6()
-elif atividade == 7:
-    atividade_7()
-elif atividade == 8:
-    atividade_8()
-elif atividade == 9:
-    atividade_9()
-elif atividade == 10:
-    atividade_10()
-elif atividade == 11:
-    atividade_11()
 
 
 
