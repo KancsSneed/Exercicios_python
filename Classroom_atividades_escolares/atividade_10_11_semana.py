@@ -93,12 +93,12 @@ def atividade_10():
 
 #Atividade 11
 def atividade_11():
-    letra = str(input("Digite a letra desejada:     "))
-    vogais = ["a","A", "e", "E", "I", "i", "U", "u"]
-    consoantes = ["Q", "q", "W", "w", "R", "r", "T", "t", "Y", "y", "P", "p" "S", "s", "D", "d", "F", "f", "G", "g", "H","h", "J", "j", "K", "k", "L", "l", "Ç", "ç", "Z", "z", "X", "x", "C", "c", "V", "v", "B", "b","N", "n", "M", "m" ]
-    if letra == any(vogais):
+    letra = input("Digite a letra desejada:     ")
+    vogais = ("a","A", "e", "E", "I", "i", "U", "u")
+    consoantes = ("Q", "q", "W", "w", "R", "r", "T", "t", "Y", "y", "P", "p" "S", "s", "D", "d", "F", "f", "G", "g", "H","h", "J", "j", "K", "k", "L", "l", "Ç", "ç", "Z", "z", "X", "x", "C", "c", "V", "v", "B", "b","N", "n", "M", "m" )
+    if letra in vogais:
         print("Vogal!")
-    elif letra == any(consoantes):
+    elif letra in consoantes:
         print("Consoante!")
 
 
