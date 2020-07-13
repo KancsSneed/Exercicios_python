@@ -1,20 +1,24 @@
-#Main programing...
-print("Olá! Seja bem-vindo ao menu do programa!")
-atividade = int(input("""
-    Escolha um das atividades de acordo com sua numeração:
-        1. Programa que mostre a mensagem "Olá mundo" na tela.
-        2. Programa que peça um número e então mostre a mensagem O número informado foi [número].
-        3. Programa que peça dois números e imprima a soma.
-        4. Programa que peça as 4 notas bimestrais e mostre a média.
-        5. Programa que converta metros para centímetros.
-        6. Programa que peça o raio de um círculo, calcule e mostre sua área.
-        7. Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
-        8. Programa Calcule e mostre o total do seu salário no referido mês.
-        9. Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
-        10. Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
-        11. Programa que verifique se uma letra digitada é vogal ou consoante
-"""))
+#Main programing... ¨Função de voltar ao menu
+def main():
+    print("Olá! Seja bem-vindo ao menu do programa!")
+    atividade = int(input("""
+        Escolha um das atividades de acordo com sua numeração:
+            1. Programa que mostre a mensagem "Olá mundo" na tela.
+            2. Programa que peça um número e então mostre a mensagem O número informado foi [número].
+            3. Programa que peça dois números e imprima a soma.
+            4. Programa que peça as 4 notas bimestrais e mostre a média.
+            5. Programa que converta metros para centímetros.
+            6. Programa que peça o raio de um círculo, calcule e mostre sua área.
+            7. Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+            8. Programa Calcule e mostre o total do seu salário no referido mês.
+            9. Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+            10. Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+            11. Programa que verifique se uma letra digitada é vogal ou consoante
+    """))
+    return atividade
                                                         #Atividades
+
+
 
 #Atividade 1
 def atividade_1():
@@ -103,7 +107,10 @@ def atividade_11():
 
 
 
-#Execução
+#Execução do programa
+atividade = main()
+
+
 if atividade == 1:
     atividade_1()
 elif atividade == 2:
