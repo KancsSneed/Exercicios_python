@@ -134,7 +134,7 @@ def atividade_10():
         atividade_10()
     elif sexo == "M" or "m":
         print("Seu sexo é masculino.")
-    elif sexo == "F" or "m":
+    elif sexo == "F" or "f":
         print("Seu sexo é feminino.")
     escolha()
 
