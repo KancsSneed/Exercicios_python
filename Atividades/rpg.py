@@ -1,44 +1,52 @@
 #Import's
 import random
 #Variáveis
-dado = random.randint(1,20)
+
     #Classes
 guerreiro = [
-        #Nome(0)
-        'Guerreiro',
-        #ataque básico(1) #dano(2)
-        'Corte de espada', 10,
-        #Ataque especial(3)  #dano(4)
-        'Lamina ardente', 20    
+        #Nome(0)               Vida(1)
+        'Guerreiro',            50,
+        #Ataque básico(2)      dano(3)
+        'Corte de espada',      10,
+        #Ataque especial(4)    dano(5)
+        'Lamina ardente',       20    
         ]
 arqueiro = [
-        #Nome(0)
-        'Arqueiro',
-        #ataque básico(1) #dano(2)
-        'Flecha veloz', 10,
-        #Ataque especial(3)  #dano(4)
-        'Three shot', 20
+        #Nome(0)               Vida(1)
+        'Arqueiro',             50,
+        #Ataque básico(2)      dano(3)
+        'Flecha veloz',         10,
+        #Ataque especial(4)    dano(5)
+        'Three shot',           20
     ]
 mago = [
-        #Nome(0)
-        'Mago',
-        #ataque básico(1) #dano(2)
-        'Bola de fogo', 10,
-        #Ataque especial(3)  #dano(4)
-        'Maldição', 20
+        #Nome(0)               Vida(1)
+        'Mago',                 50,
+        #Ataque básico(2)      Dano(3)
+        'Bola de fogo',         10,
+        #Ataque especial(4)    Dano(5)
+        'Maldição',             20
     ]
 
+oponente = [
+        #Nome(0)               Vida(1)
+        'Sr.Maldade',           100,
+        #Ataque básico(2)      Dano(3)
+        'Pedrada',              10,
+        #Ataque especial(4)    Dano(5)
+        'Lapada',               20    
+]
 #Funções 
 def escolher_classe():
-    try:
         print("""
             1. Guerreiro
             2. Arqueiro
             3. Mago
         """)
-        classe = int(input('Escolha sua classe de acordo ao número.'))
-    except ValueError:
-	    print("Somente números sao aceitos. Tente novamente.")
+        classe = input('Escolha sua classe de acordo ao número.')
+    while classe != ("1" or "2") or "3":
+        print("Porfavor escolha sua classe de acordo com a numeração.")
+        escolher_classe()
     if classe == 1 :
         print("Sua classe é guerreiro")
     elif classe == 2:
@@ -56,7 +64,8 @@ def batalha():
     elif player > oponente:
         print("Causou dano!")
     else:
-        print("Dados iguiais! Relancando dado...")
+        print("Dados iguiais! Relancando dados...")
         batalha()
 
 #Executando o programa
+escolher_classe()
