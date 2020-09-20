@@ -34,19 +34,21 @@ oponente = [
         #Ataque básico(2)      Dano(3)
         'Pedrada',              10,
         #Ataque especial(4)    Dano(5)
-        'Lapada',               20    
+        'Lamina de sangue',     20    
 ]
 #Funções 
 def escolher_classe():
+    try:
         print("""
             1. Guerreiro
             2. Arqueiro
             3. Mago
         """)
-        classe = input('Escolha sua classe de acordo ao número.')
-    while classe != ("1" or "2") or "3":
-        print("Porfavor escolha sua classe de acordo com a numeração.")
-        escolher_classe()
+        classe = int(input('Escolha sua classe de acordo ao número.'))
+    except ValueError:
+	    print("Somente números sao aceitos. Tente novamente.")
+    if classe != int():
+        print("Positivo")
     if classe == 1 :
         print("Sua classe é guerreiro")
     elif classe == 2:
