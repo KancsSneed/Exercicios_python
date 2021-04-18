@@ -5,7 +5,7 @@ def main():
     print("Olá! Seja bem-vindo ao menu do programa!")
     atividade = int(input("""
         Escolha um das atividades de acordo com sua numeração:
-            1. Programa que mostre a mensagem "Olá mundo" na tela.
+            1. Programa que mostre a mensagem "OlÁ ETE PORTO DIGITAL!" na tela.
             2. Programa que peça um número e então mostre a mensagem O número informado foi [número].
             3. Programa que peça dois números e imprima a soma.
             4. Programa que peça as 4 notas bimestrais e mostre a média.
