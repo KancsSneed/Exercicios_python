@@ -1,4 +1,6 @@
 #Main programing... ¨Função de voltar ao menu
+#Aluno: Luís Kennedy Ramos da Silva
+#Série: 2°A
 def main():
     print("Olá! Seja bem-vindo ao menu do programa!")
     atividade = int(input("""
